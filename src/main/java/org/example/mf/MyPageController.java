@@ -19,11 +19,6 @@ public class MyPageController extends HttpServlet {
 
         HttpSession session = req.getSession(false);
 
-        if(session == null || session.getAttribute("memberInfo") == null){
-            resp.sendRedirect("/signin");
-            return;
-        }
-
         if(session.getAttribute("cart") == null){
             resp.sendRedirect("/movies");
             return;

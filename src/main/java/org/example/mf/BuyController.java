@@ -28,10 +28,7 @@ public class BuyController extends HttpServlet {
 
         HttpSession session = req.getSession(false);
 
-        if(session == null || session.getAttribute("memberInfo") == null){
-            resp.sendRedirect("/signin");
-            return;
-        }
+
 
         //로그인된 사용자
         Object cartObj = session.getAttribute("cart");
