@@ -7,10 +7,23 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+    <title>Title</title>
+</head>
+<body>
+  <h1>Signin Page</h1>
+  <form action="/signin" method="post">
+      <div>
+          UID
+          <input type="text" name="uid">
+      </div>
+      <div>
+          UPW
+          <input type="text" name="upw">
+      </div>
+      <div>
+          <button>Signin</button>
+      </div>
+  </form>
+</body>
 </html>
